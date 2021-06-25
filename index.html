@@ -13,15 +13,13 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
-    <link rel="stylesheet" href="./css/main.min.css">
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <!-- body -->
   <body>
     <!-- top line  -->
     <header class="page-header">
       <div class="page-header__container container">
-
         <a href="./index.html" class="logo link">
           <span class="logo--blue">Web</span>Studio</a
         >
@@ -29,10 +27,16 @@
         <nav>
           <ul class="site-nav list">
             <li class="site-nav__item item">
-              <a href="./index.html" class="site-nav__link link site-nav__link--current">Студия</a>
+              <a
+                href="./index.html"
+                class="site-nav__link link site-nav__link--current"
+                >Студия</a
+              >
             </li>
             <li class="site-nav__item item">
-              <a href="./portfolio.html" class="site-nav__link link">Портфолио</a>
+              <a href="./portfolio.html" class="site-nav__link link"
+                >Портфолио</a
+              >
             </li>
             <li class="site-nav__item item">
               <a href="#contacts" class="site-nav__link link">Контакты</a>
@@ -42,7 +46,7 @@
 
         <ul class="contact list">
           <li class="contact__item item">
-            <a href="mailto:info@devstudio.com" class="contact__link  link">
+            <a href="mailto:info@devstudio.com" class="contact__link link">
               <svg class="contact__icon" width="16px" height="12px">
                 <use href="./images/svg/sprite.svg#icon-envelope"></use>
               </svg>
@@ -69,7 +73,11 @@
             Эффективные решения <br />
             для вашего бизнеса
           </h1>
-          <button type="button" class="hero__button--primary button--primary button" data-modal-open>
+          <button
+            type="button"
+            class="button hero__button--primary button--primary"
+            data-modal-open
+          >
             Заказать услугу
           </button>
         </div>
@@ -78,7 +86,9 @@
       <section class="features">
         <div class="features__container container">
           <!-- h2 особенности скрыть на css -->
-          <h2 class="features__title section-title visually-hidden">особенности</h2>
+          <h2 class="features__title section-title visually-hidden">
+            особенности
+          </h2>
           <ul class="features__list list">
             <li class="features__item item">
               <svg class="features__icon">
@@ -124,12 +134,13 @@
         </div>
       </section>
       <!-- specialty -->
-      <section class="specialty ">
+      <section class="specialty">
         <div class="specialty__container container">
           <h2 class="specialty__title section-title">Чем мы занимаемся</h2>
           <ul class="specialty__list list">
             <li class="specialty__item item">
-              <img class="specialty__img img"
+              <img
+                class="specialty__img img"
                 src="./images/index-img/desktopApplications.jpg"
                 alt="software for computers"
                 width="370"
@@ -138,7 +149,8 @@
               <h3 class="specialty__subtitle">ДЕСКТОПНЫЕ ПРИЛОЖЕНИЯ</h3>
             </li>
             <li class="specialty__item item">
-              <img class="specialty__img img"
+              <img
+                class="specialty__img img"
                 src="./images/index-img/mobileApplications.jpg"
                 alt="smartphone software"
                 width="370"
@@ -147,7 +159,8 @@
               <h3 class="specialty__subtitle">МОБИЛЬНЫЕ ПРИЛОЖЕНИЯ</h3>
             </li>
             <li class="specialty__item item">
-              <img class="specialty__img img"
+              <img
+                class="specialty__img img"
                 src="./images/index-img/designSolutions.jpg"
                 alt="tablet software"
                 width="370"
@@ -348,7 +361,7 @@
       </section>
       <!-- clients -->
       <section class="clients section">
-        <div class="clients__container container ">
+        <div class="clients__container container">
           <h2 class="clients__title section-title">Постоянные клиенты</h2>
           <ul class="clients__list list">
             <li class="clients__item item">
@@ -401,23 +414,29 @@
     <footer class="footer">
       <div id="contacts" class="footer__container container">
         <div class="footer-contacts">
-          <a href="./index.html" class="footer-contacts__logo logo footer__link link">
+          <a href="./index.html" class="footer__logo logo footer__link link">
             <span class="logo--blue">Web</span>Studio</a
           >
           <address class="address">
             <ul class="address__list list">
               <li class="address__item item">
-                <a href="#" class="address__adds footer__link address__link link"
+                <a
+                  href="#"
+                  class="address__adds footer__link address__link link"
                   >г. Киев, пр-т Леси Украинки, 26</a
                 >
               </li>
               <li class="item">
-                <a href="mailto:info@devstudio.com" class="address__webmail address__link link"
+                <a
+                  href="mailto:info@devstudio.com"
+                  class="address__webmail address__link link"
                   >info@devstudio.com</a
                 >
               </li>
               <li class="item">
-                <a href="tel:+380961111111" class="address__phone address__link link"
+                <a
+                  href="tel:+380961111111"
+                  class="address__phone address__link link"
                   >+38 096 111 11 11</a
                 >
               </li>
@@ -470,7 +489,10 @@
               name="subscription-email"
               placeholder="E-mail"
             />
-            <button type="submit" class="button__subscription button  button--primary">
+            <button
+              type="submit"
+              class="button__subscription button button--primary"
+            >
               Отправить
               <svg class="subscription__icon">
                 <use href="./images/svg/sprite.svg#icon-subscription"></use>
@@ -485,7 +507,7 @@
       <div class="modal">
         <!-- кнопка закрытия модалки -->
         <button type="button" class="button-close button" data-modal-close>
-          <svg class="button-close__icon  icon" width="11px" height="11px">
+          <svg class="button-close__icon icon" width="11px" height="11px">
             <use href="./images/svg/sprite.svg#icon-close"></use>
           </svg>
         </button>
@@ -506,10 +528,10 @@
                 id="user-name"
                 required
               />
-              <svg class="form-icon icon">
+              <svg class="form__icon icon">
                 <use href="./images/svg/sprite.svg#icon-personBlack"></use>
               </svg>
-            </ы>
+            </span>
           </div>
 
           <div class="form__fild">
@@ -521,7 +543,7 @@
                 name="user-tel"
                 id="user-tel"
               />
-              <svg class="form-icon icon">
+              <svg class="form__icon icon">
                 <use href="./images/svg/sprite.svg#icon-phoneBlack"></use>
               </svg>
             </span>
@@ -536,7 +558,7 @@
                 name="user-email"
                 id="user-email"
               />
-              <svg class="form-icon icon">
+              <svg class="form__icon icon">
                 <use href="./images/svg/sprite.svg#icon-emailBlack"></use>
               </svg>
             </span>
@@ -571,7 +593,7 @@
 
           <!-- кнопка отправки модалки -->
 
-          <button type="submit" class="form__button  button  button--primary">
+          <button type="submit" class="form__button button button--primary">
             Отправить
           </button>
         </form>
